@@ -1,6 +1,7 @@
-vaiable "sample" {
-  default=200
+variable "sample" {
+  default = 200
 }
 
-output "sample"
-  value=var.sample
+output "sample" {
+  value = var.sample
+}
