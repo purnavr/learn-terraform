@@ -23,3 +23,5 @@ variable "sample3" {}
 output "test" {
   value = var.sample3
 }
+
+variable "input" {}
