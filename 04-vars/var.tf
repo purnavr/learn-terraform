@@ -18,6 +18,8 @@ output "sample2" {
   value = var.sample2
 }
 
+variable "sample3" {}
+
 output "test" {
   value = var.sample3
 }
