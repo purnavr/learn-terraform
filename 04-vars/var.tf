@@ -17,3 +17,7 @@ variable "sample2" {}
 output "sample2" {
   value = var.sample2
 }
+
+output "test" {
+  value = var.sample3
+}
