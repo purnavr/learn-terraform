@@ -1,1 +1,1 @@
-sample2 = iliyas purna
+sample2 = "iliyas purna"
