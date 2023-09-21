@@ -39,10 +39,12 @@ output "sample4" {
 }
 
 variable "sample5" {
-  fruits = {
-    apple    = 5
-    oranges  = 5
-    banana   = true
+  default = {
+    fruits = {
+      apple   = 5
+      oranges = 5
+      banana  = true
+    }
   }
 }
 
