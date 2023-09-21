@@ -36,5 +36,16 @@ variable "sample4" {
 
 output "sample4" {
   value = var.sample4[1]
-  value = var.sample4
+}
+
+variable "sample5" {
+  fruits = {
+    apple    = 5
+    oranges  = 5
+    banana   = true
+  }
+}
+
+output "sample5" {
+  value = var.sample5.value.index[apple]
 }
