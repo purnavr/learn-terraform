@@ -29,3 +29,11 @@ variable "input" {}
 output "input" {
   value = var.input
 }
+
+variable "sample4" {
+  default = [10,"apple"]
+}
+
+output "sample4" {
+  value = var.sample4[1]
+}
