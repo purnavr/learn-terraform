@@ -31,3 +31,5 @@ variable "d3" {
 resource "null_resource" "d3" {
   each_value = var.d3
 }
+
+#
