@@ -21,11 +21,10 @@ variable "d3" {
       count = 3
     }
     banana = {
-      name = "apple"
+      name = "banana"
       count = 3
     }
   }
-
 }
 
 resource "null_resource" "d3" {
