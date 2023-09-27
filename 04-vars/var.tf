@@ -31,7 +31,7 @@
 #}
 
 variable "sample4" {
-  default = [10,"apple"]
+  default = [10, "apple"]
 }
 
 output "sample4" {
@@ -51,3 +51,5 @@ variable "sample5" {
 output "sample5" {
   value = var.sample5.fruits.banana
 }
+
+
