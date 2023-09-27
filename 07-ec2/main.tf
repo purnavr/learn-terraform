@@ -1,18 +1,6 @@
-data "aws_ami" "ami" {
-  most_recent = true
-  name_regex  = "Centos-8-DevOps-Practice"
-  owners      = ["973714476881"]
+resource "aws_instance" "test" {
+  ami           = "ami-03265a0778a880afb"
+  instance_type = var.instance_type == "" ? "t3.micro" : var.instance_type
 }
 
-output "ami" {
-  value = data.aws_ami.ami.id
-}
-
-resource "aws_instance" "ec2" {
-  ami           = data.aws_ami.ami.id
-  instance_type = "t2.micro"
-
-  tags = {
-    Name = "HelloWorld"
-  }
-}
+variable "instance_type" {}
