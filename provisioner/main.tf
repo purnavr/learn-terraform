@@ -8,7 +8,7 @@ resource "aws_instance" "web" {
   }
 }
 
-resource "aws_instance" "web" {
+resource "aws_instance" "test" {
   connection {
     user     = "root"
     password = DevOps321
