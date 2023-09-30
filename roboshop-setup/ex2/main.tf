@@ -23,4 +23,6 @@ output "public-ip" {
   value = aws_instance.frontend.*.public_ip
 }
 
-#
+output "pub_ip" {
+  value = [for k, v in aws_instance.frontend : "${k} - ${v.public_ip}"]
+}
