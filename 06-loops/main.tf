@@ -31,8 +31,8 @@ resource "null_resource" "d3" {
   for_each = var.d3
 }
 
-#output "FRUITS" {
-#  value = [for a in var.d2 : upper(a)]
-#}
+output "FRUITS" {
+  value = [for a in var.d2 : upper(a)]
+}
 
 
