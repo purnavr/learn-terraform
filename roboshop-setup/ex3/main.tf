@@ -5,7 +5,7 @@ data "aws_ami" "ami" {
 }
 
 
-resource "aws_instance" "frontend" {
+resource "aws_instance" "ec2" {
   for_each               = var.instances
   ami                    = data.aws_ami.ami.id
   instance_type          = each.value["type"]
@@ -29,5 +29,5 @@ variable "instances" {
 }
 
 output "public_ip" {
-  value = [for k, v in aws_instance.frontend : "${k} - ${v.public_ip}"]
+  value = [for k, v in aws_instance.ec2 : "${k} - ${v.public_ip}"]
 }
