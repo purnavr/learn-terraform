@@ -33,5 +33,5 @@ variable "instances" {
 #}
 
 output "public_ips" {
-  value = [for k, v in aws_instance.ec2 : "${k} - ${v}"]
+  value = [for k, v in aws_instance.ec2 : "${k}"]
 }
