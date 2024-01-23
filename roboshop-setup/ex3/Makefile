@@ -1,5 +1,5 @@
 git:
 	git pull
-apply:
+apply: git
 	terraform init
 	terraform apply -auto-approve
