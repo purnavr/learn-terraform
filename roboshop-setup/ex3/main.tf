@@ -33,5 +33,5 @@ output "public_ip" {
 }
 
 output "public_ips" {
-  value = [for k, v in aws_instance.ec2 : "v.private_ip"]
+  value = [for k, v in aws_instance.ec2 : "${v.private_ip}"]
 }
