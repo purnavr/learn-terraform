@@ -1,3 +1,1 @@
-resource "aws_instance"  "ec2" {
-  ami = "ami"
-}
+resource "null_resource" "null" {}
