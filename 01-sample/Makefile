@@ -1,2 +1,3 @@
 apply:
 	ls
+	terraform init
