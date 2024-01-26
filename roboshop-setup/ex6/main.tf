@@ -12,6 +12,6 @@ resource "aws_spot_instance_request" "ec2" {
   wait_for_fulfillment   = true
 
   tags = {
-    Name = ec2
+    Name = "ec2"
   }
 }
