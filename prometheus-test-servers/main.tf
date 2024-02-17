@@ -9,7 +9,7 @@ resource "aws_spot_instance_request" "node1" {
   }
 }
 
-resource "aws_spot_instance_request" "node1" {
+resource "aws_spot_instance_request" "node2" {
   ami           = "ami-0d3a21488b4d72948"
   instance_type = "t3.micro"
   vpc_security_group_ids = ["sg-0497e25cd969a429f"]
