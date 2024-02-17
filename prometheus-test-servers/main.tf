@@ -8,7 +8,7 @@ resource "aws_spot_instance_request" "node1" {
   }
 }
 
-resource "aws_ec2_tag" "node1" {
+resource "aws_ec2_tag" "nodee1" {
   resource_id = aws_spot_instance_request.node1.spot_instance_id
   key         = "Name"
   value       = "prom-test-server"
@@ -20,7 +20,7 @@ resource "aws_spot_instance_request" "node2" {
   vpc_security_group_ids = ["sg-0497e25cd969a429f"]
 }
 
-resource "aws_ec2_tag" "node2" {
+resource "aws_ec2_tag" "node2e" {
   resource_id = aws_spot_instance_request.node2.spot_instance_id
   key         = "Name"
   value       = "prom-test-node"
