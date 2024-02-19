@@ -23,4 +23,15 @@ resource "aws_spot_instance_request" "node1" {
 #  value       = "prometheus"
 #}
 
+# Request a spot instance at $0.03
+resource "aws_spot_instance_request" "cheap_worker" {
+  ami           = "ami-0f3c7d07486cad139"
+  spot_price    = "0.03"
+  instance_type = "t3.small"
+
+  tags = {
+    Name = "CheapWorker"
+  }
+}
+
 
